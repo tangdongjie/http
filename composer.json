@@ -1,0 +1,21 @@
+{
+    "name": "Tangdj/Http",
+    "description": "http client library",
+    "authors": [
+        {
+            "name": "tangdj",
+            "email": "18511626110@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1",
+        "guzzlehttp/guzzle": "~6.3",
+        "tightenco/collect": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ofashion\\": "src"
+        }
+    }
+}
