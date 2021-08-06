@@ -1,14 +1,5 @@
-<<<<<<< HEAD
-# http
-=======
-# com-tangdj
-    This is a private warehouse service, feel free to use, problems need to be resolved
-    
+<?php
 
-## Test code
-
-
-```php
 require_once './vendor/autoload.php';
 
 use Tangdj\Http\TangdjHttp;
@@ -29,5 +20,3 @@ $b = $r['b']->json();
 
 var_dump($a);
 var_dump($b);
-```
->>>>>>> 9f96cdcec6ac265af7fe0fa32500e4a82529e6d4
