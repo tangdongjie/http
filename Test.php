@@ -11,8 +11,8 @@ use Tangdj\Http\TangdjHttp;
 
 //并发
 $r = TangdjHttp::unwrap([
-    'a' => TangdjHttp::asJson()->getConcurrent('127.0.0.1/Test.php', ['get_params' => ['a'=>111,'b'=>22]]),
-    'b' => TangdjHttp::asJson()->postConcurrent('127.0.0.1/Test.phpt', ['post_params' => ['c'=>333,'d'=>44]])
+    'a' => TangdjHttp::asJson()->getConcurrent('127.0.0.1/test.php', ['get_params' => ['a'=>111,'b'=>22]]),
+    'b' => TangdjHttp::asJson()->postConcurrent('127.0.0.1/test.php', ['post_params' => ['c'=>333,'d'=>44]])
 ]);
 
 $a = $r['a']->json();
