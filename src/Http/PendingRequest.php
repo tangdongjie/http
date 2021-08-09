@@ -68,7 +68,7 @@ class PendingRequest
     {
         $responses = unwrap($promises);
         foreach ($responses as &$response) {
-            $response = new OFashionResponse($response);
+            $response = new TangdjResponse($response);
         }
         return $responses;
     }
@@ -187,7 +187,7 @@ class PendingRequest
     function send($method, $url, $options)
     {
         $isCheckResponse = $this->isCheckResponse();
-        return new OFashionResponse($this->buildClient()->requestAsync(
+        return new TangdjResponse($this->buildClient()->requestAsync(
             $method,
             $url,
             $this->mergeOptions(['query' => $this->parseQueryParams($url)], $options)
@@ -232,7 +232,7 @@ class PendingRequest
     function runBeforeSendingCallbacks($request)
     {
         return $this->tap($request, function ($request) {
-            $this->beforeSendingCallbacks->each->__invoke(new OFashionRequest($request));
+            $this->beforeSendingCallbacks->each->__invoke(new TangdjRequest($request));
         });
     }
 
