@@ -1,6 +1,7 @@
 {
     "name": "tangdj/http",
     "description": "http client library",
+    "license": "MIT",
     "authors": [
         {
             "name": "tangdj",
