@@ -10,7 +10,7 @@ namespace Tangdj\Http;
 
 use GuzzleHttp\Exception\RequestException;
 use Tangdj\Exception\ServiceException;
-use Tandj\Traits\Macroable;
+use Tangdj\Traits\Macroable;
 use function GuzzleHttp\Promise\unwrap;
 
 class PendingRequest
